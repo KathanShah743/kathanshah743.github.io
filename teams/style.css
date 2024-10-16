@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #07001b;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #07001b;
+    position: fixed;
+    z-index: 2;
+}
+
+.border {
+    display: flex;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #505050;
+}
+
+.border1 {
+    display: flex;
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #07001b;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    top: 150px;
+    background-color: #07001b;
+}
+
+footer p {
+    color: #fff;
+}
+
+.big {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav-links {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logos {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    height: 100px;
+    width: 100%;
+}
+
+.logo img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: block;
+    color: #07001b;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logos p{
+    position: relative;
+    float: left;
+    left: 100px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    top: -85px;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Syne Mono', monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 0.1em 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #07001b;
+    background-size: 100% 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    color: #07001b;
+  }
+  
+.dropdown-content {
+    right: 50px;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    color: #07001b;
+    background-color: #07001b;
+    border-radius: 5px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #fff; 
+}
+
+.dd {
+    float: inline-start;
+    right: 0px;
+}
+
+
+footer .soc {
+    position: relative;
+    height: min-content;
+    margin: auto auto;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .soc:hover {
+    color: #208ACB;
+}
+
+footer p {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Syne Mono', monospace;
+}
+
+footer img {
+    height: 30px;
+    vertical-align: -5px;
+}
+
+.heading {
+    display: flex;
+    height: 170px;
+}
+
+.heading p {
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2rem;
+    font-weight: 500;
+    top: 150px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subheading {
+    display: flex;
+    height: 170px;
+    margin-bottom: 120px;
+}
+
+.subheading p:hover {
+    background-color: #fff;
+    color: #07001b;
+}
+
+.subheading p {
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    height: auto;
+    font-size: 3rem;
+    font-weight: 500;
+    top: 150px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.blue {
+    color: #208ACB;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.cards {
+    display: grid;
+    color: transparent;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    list-style-type: none;
+    gap: 2rem;
+    margin: 4rem 5vw;
+}
+
+.card {
+    position: relative;
+    height: 450px;
+    width: 320px;
+    background-color: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card__image {      
+    width: 100%;
+    height: auto;
+  }
+
+.bottom {
+  height: 130%;
+  width: auto;
+}
+
+.top {
+  height: 85%;
+  width: 100%;
+}
+
+.founder {
+  height: 85%;
+  width: 100%;
+}
+
+.founders {
+  font-size: 1.7rem;
+}
+
+.advisors {
+  font-size: 1.6rem;
+}
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 40px 40px 0 0;
+    background-color: #fff;      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+
+  .card:hover .card__image {
+    opacity: 80%;
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: 40px 40px 0 0;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: #fff;
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+
+  .card__header-text {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card__title {
+    font-size: 1.4em;
+    margin: 0 0 .3em;
+    color: #07001b;
+    font-family: 'Syne Mono', monospace;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "Syne Mono", monospace;  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: 1em;
+    color: #07001b;
+    font-family: "Syne Mono", monospace;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: #D7BDCA;
+    font-family: "Syne Mono", monospace;   
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }    
+
+  .card__overlay i {
+    color: #07001b;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }

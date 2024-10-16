@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #07001b;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: #07001b;
+    position: fixed;
+    z-index: 1;
+}
+
+.border {
+    display: flex;
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #505050;
+}
+
+.border1 {
+    display: flex;
+    position: relative;
+    height: 3px;
+    width: 100%;
+    background-color: #07001b;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    top: 150px;
+    background-color: #07001b;
+}
+
+footer p {
+    color: #fff;
+}
+
+.nav-links {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logos {
+    position: absolute;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    height: 100px;
+    width: 100%;
+}
+
+.logo img {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: block;
+    color: #07001b;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logos p{
+    position: relative;
+    float: left;
+    left: 100px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 3.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    top: -85px;
+}
+
+nav {
+    float: right;
+    margin-top: 30px;
+}
+
+nav a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Syne Mono', monospace;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 0.1em 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #07001b;
+    background-size: 100% 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    color: #07001b;
+  }
+  
+.dropdown-content {
+    right: 50px;
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    color: #07001b;
+    background-color: #07001b;
+    border-radius: 5px;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: #fff; 
+}
+
+.dd {
+    float: inline-start;
+    right: 0px;
+}
+
+footer .soc {
+    position: relative;
+    height: min-content;
+    margin: auto auto;
+    padding: 10px 10px;
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .soc:hover {
+    color: #208ACB;
+}
+
+footer p {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: 'Syne Mono', monospace;
+}
+
+footer img {
+    height: 30px;
+    vertical-align: -5px;
+}
+
+.blue {
+    color: #208ACB;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2rem;
+    background-image: linear-gradient(#208ACB, #208ACB);
+    background-size: 100% 0.1em;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: default;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.blue:hover {
+    background-size: 100% 100%;
+    color: #07001b;
+}
+
+.blue1 {
+    color: #208ACB;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2rem;
+}
+
+.stats {
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2rem;
+    margin-top: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    display: flex;
+}
+
+.card{
+    display: block;
+    position: relative;
+    top: 10px;
+    bottom: 50px;
+    height: 450px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card img {
+    position: relative;
+    height: 250px;
+    width: 320px;
+    top: 25px;
+    -webkit-filter: invert(15%);
+    filter: invert(15%);
+}
+
+.card h3 {
+    position: relative;
+    color: #07001b;
+    font-family: 'Syne Mono', monospace;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 40px;
+}
+
+.card a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    background-color: #07001b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card a:hover {
+    opacity: 0.75;
+}
+/*
+.card2 {
+    position: relative;
+    bottom: 50px;
+    height: 450px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.card2 img {
+    position: relative;
+    height: 250px;
+    width: 320px;
+    top: 25px;
+    -webkit-filter: invert(15%);
+    filter: invert(15%);
+}
+
+.card2 h3 {
+    position: relative;
+    color: #07001b;
+    font-family: 'Syne Mono', monospace;
+    font-weight: 600;
+    margin: 40px;
+    font-size: 2rem;
+}
+
+.card2 a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    background-color: #07001b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card2 a:hover {
+    opacity: 0.75;
+}
+
+.card3 {
+    position: relative;
+    bottom: 50px;
+    height: 450px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.card3 img {
+    position: relative;
+    height: 250px;
+    width: 320px;
+    top: 25px;
+    -webkit-filter: invert(5%);
+    filter: invert(5%);
+}
+
+.card3 h3 {
+    position: relative;
+    color: #07001b;
+    font-family: 'Syne Mono', monospace;
+    font-weight: 600;
+    margin: 40px;
+    font-size: 2rem;
+}
+
+.card3 a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    background-color: #07001b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card3 a:hover {
+    opacity: 0.75;
+}
+*/
+.big {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.image img{
+    margin-top: 0px;
+    margin-right: 20px;
+    float: right;
+    height: 40%;
+    width: 40%;
+    z-index: -1;
+}
+
+.heading {
+    color: transparent;
+    display: flex;
+    width: 55%;
+    float: left;
+}
+
+.heading1 p {
+    position: relative;
+    top: 120px;
+    left: 50px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.heading2 p {
+    position: relative;
+    top: 150px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #208ACB;
+}
+
+.text {
+    color: transparent;
+    display: flex;
+    width: 55%;
+    float: left;
+}
+
+.text1 p {
+    position: relative;
+    top: 190px;
+    left: 20px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #808080;
+}
+
+.info {
+    color: transparent;
+    display: flex;
+    width: 55%;
+    float: left;
+    
+}
+
+.info1 p {
+    position: relative;
+    top: 220px;
+    left: 20px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    justify-content: left;
+}
+
+.head1 p {
+    font-size: 2rem;
+}
+
+@media (max-width: 1000px) {
+    nav a {
+        display: none;
+    }
+}
+
+.heading2 p {
+    color: #208ACB;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret 1.06s step-end infinite;
+  }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #fff }
+}
